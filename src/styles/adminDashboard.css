@@ -1,0 +1,35 @@
+/* ===== Stats Cards Hover Animation ===== */
+.card.border-1 {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card.border-1:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Action Cards Hover Animation ===== */
+.admin-action-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.admin-action-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Action card icon animation on hover */
+.admin-action-card .rounded-circle {
+  transition: background 0.4s ease, transform 0.4s ease;
+}
+
+.admin-action-card:hover .rounded-circle {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.05); /* subtle color change on hover */
+}
+
+/* Optional: smooth text color transition */
+.admin-action-card h6,
+.admin-action-card p {
+  transition: color 0.35s ease;
+}

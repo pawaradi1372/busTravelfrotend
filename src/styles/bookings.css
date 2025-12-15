@@ -1,0 +1,68 @@
+.my-bookings-container {
+  max-width: 1100px;
+}
+
+.booking-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: 0.2s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.booking-header h5 {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.booking-header small {
+  color: #6c757d;
+}
+
+.booking-info p {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.payment-status.paid {
+  color: #198754;
+  font-weight: 600;
+}
+
+.payment-status.pending {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.payment-status.failed {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.ticket-status.confirmed {
+  color: #198754;
+  font-weight: 600;
+}
+
+.ticket-status.cancelled {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.ticket-status.other {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.booking-actions .btn {
+  border-radius: 10px;
+  font-weight: 600;
+}
