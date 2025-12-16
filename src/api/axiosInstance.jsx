@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-   baseURL: "https://bus-travelbackend-ypj8-cn480g848.vercel.app/api"
+   baseURL: "https://bus-travelbackend-pmaq.vercel.app/api"
 });
 
 api.interceptors.request.use((config) => {
