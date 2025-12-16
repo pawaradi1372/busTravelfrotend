@@ -4,12 +4,9 @@ const api = axios.create({
    baseURL: "https://bus-travelbackend-ypj8-cn480g848.vercel.app/api"
 });
 
-// Add token automatically to headers if available
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
+  if (token) config.headers.Authorization = `Bearer ${token}`;
   return config;
 });
 
