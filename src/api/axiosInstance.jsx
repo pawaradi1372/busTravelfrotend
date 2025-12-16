@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://bus-travelbackend.vercel.app/api",
+   baseURL: "https://bus-travelbackend-ypj8-cn480g848.vercel.app/api"
 });
 
 // Add token automatically to headers if available
